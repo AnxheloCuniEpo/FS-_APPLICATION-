@@ -1,0 +1,80 @@
+{
+    "id": "requestform",
+    "schemaVersion": "1.1.0",
+    "name": "RequestForm",
+    "revision": "1",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "kindly_provide_following_details",
+            "type": "section",
+            "title": "Kindly provide following details",
+            "content": [
+                {
+                    "id": "ticket_type",
+                    "type": "string",
+                    "label": "Ticket Type",
+                    "readOnly": true,
+                    "value": "${context.TicketType}",
+                    "control": {
+                        "type": "Dropdown",
+                        "properties": {
+                            "items": [
+                                {
+                                    "value": "New laptop",
+                                    "displayValue": "New laptop"
+                                },
+                                {
+                                    "value": "Software Install",
+                                    "displayValue": "Software Install"
+                                },
+                                {
+                                    "value": "Software Delete",
+                                    "displayValue": "soft Delete"
+                                }
+                            ]
+                        }
+                    },
+                    "constraints": {
+                        "required": true,
+                        "enum": [
+                            "New laptop",
+                            "Software Install",
+                            "Software Delete"
+                        ]
+                    }
+                },
+                {
+                    "id": "description",
+                    "type": "string",
+                    "label": "Description",
+                    "placeholder": "Provide description",
+                    "readOnly": false,
+                    "value": "${context.Description}",
+                    "control": {
+                        "type": "TextArea",
+                        "properties": {
+                            "height": "medium"
+                        }
+                    },
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "submit",
+            "text": "Submit",
+            "decisionType": "positive"
+        },
+        {
+            "id": "cancel",
+            "text": "Cancel",
+            "decisionType": "negative"
+        }
+    ]
+}

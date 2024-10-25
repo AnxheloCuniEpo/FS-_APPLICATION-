@@ -1,0 +1,11 @@
+EMPID,FIRSTNAME,LASTNAME,EMAIL,DESIGNATION,ISACTIVE
+10001,David,Johnson,enter mail id here,Developer,X
+10002,Ian,Smith,enter mail id here,HR,X
+10003,Julia,Williams,enter mail id here,IT_Support,X
+10004,Samuel,Samson,enter mail id here,Lead,X
+10005,Dan,Walter,enter mail id here,HR,X
+10006,Anne,Davis,enter mail id here,Sr. Developer,X
+10007,John,Jackson,enter mail id here,Develper,X
+10008,Pablo,Farnandez,enter mail id here,IT_Support,X
+10009,Erica,Miller,enter mail id here,HR,X
+10010,Andrew,Alvaro,enter mail id here,IT_Support,X
